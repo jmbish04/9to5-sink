@@ -1,17 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "9to5-sink",
-  "main": "dist/server/index.mjs",
-  "assets": {
-    "binding": "ASSETS",
-    "directory": "dist/public"
-  },
+  "pages_build_output_dir": "./dist",
   "compatibility_date": "2025-05-08",
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "keep_vars": true,
-  "upload_source_maps": true,
   "ai": {
     "binding": "AI"
   },
@@ -24,7 +18,7 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "2ec589aa66f84f73bb411bb02b054c31" 
+      "id": "2ec589aa66f84f73bb411bb02b054c31"
     }
   ]
 }
